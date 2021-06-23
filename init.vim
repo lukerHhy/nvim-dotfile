@@ -23,7 +23,7 @@ let g:solarized_termcolors=256
 
 let mapleader = " "
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-vetur', 'coc-git', 'coc-vimlsp', 'coc-eslint', 'coc-fzf-preview', 'coc-svg', 'coc-css', 'coc-prettier']
+let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-vetur', 'coc-git', 'coc-vimlsp', 'coc-eslint', 'coc-fzf-preview', 'coc-svg', 'coc-css', 'coc-prettier', 'coc-snippets']
 
 " save
 nnoremap ;; :w<CR>
