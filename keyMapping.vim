@@ -1,10 +1,10 @@
 let mapleader = " "
-" jump window
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-i> :b#<CR>
+nnoremap <C-]> :b#<CR>
 
 nnoremap <C-f> <cmd>Telescope find_files<cr>
 nnoremap <C-g> <cmd>Telescope live_grep<cr>
