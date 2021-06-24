@@ -22,6 +22,8 @@ set number
 set clipboard=unnamed
 
 autocmd BufNewFile  *.html   0r ~/.config/nvim/template/skeleton.html
+autocmd BufNewFile  *.vue   0r ~/.config/nvim/template/skeleton.vue
+
 set background=light
 colorscheme solarized
 let g:airline_solarized_bg='light'

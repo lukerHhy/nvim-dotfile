@@ -55,5 +55,4 @@ require("telescope").setup {
       }
     },
 }
-require('telescope').load_extension('media_files')
 
