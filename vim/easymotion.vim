@@ -3,6 +3,9 @@ let g:EasyMotion_smartcase = 1
 " <Leader>f{char} to move to {char}
 " map  <Leader>f <Plug>(easymotion-bd-f)
 " nmap <Leader>f <Plug>(easymotion-overwin-f)
+"
+vmap ;s <Plug>(coc-codeaction-selected)
+nmap ;s <Plug>(coc-codeaction-selected)
 
 " s{char}{char} to move to {char}{char}
 nmap s <Plug>(easymotion-overwin-f2)

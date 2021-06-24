@@ -19,7 +19,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'windwp/nvim-autopairs'
-Plug 'norcalli/nvim-base16.lua'
+Plug 'lewis6991/spellsitter.nvim'
 call plug#end()
 
-let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-vetur', 'coc-git', 'coc-vimlsp', 'coc-eslint', 'coc-fzf-preview', 'coc-svg', 'coc-css', 'coc-prettier', 'coc-snippets']
+let g:coc_global_extensions = ['coc-spell-checker', 'coc-tsserver', 'coc-json', 'coc-vetur', 'coc-git', 'coc-vimlsp', 'coc-eslint', 'coc-svg', 'coc-css', 'coc-prettier', 'coc-snippets']

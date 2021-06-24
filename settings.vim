@@ -6,6 +6,8 @@ set smartcase
 set ignorecase
 set modifiable
 set scrolloff=5 
+set spell
+set spelllang=en_us
 
 " save
 nnoremap ;; :w<CR>
