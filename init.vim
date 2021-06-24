@@ -1,8 +1,8 @@
-source /Users/huanghuaye/.config/nvim/plugs.vim
-source /Users/huanghuaye/.config/nvim/settings.vim
-source /Users/huanghuaye/.config/nvim/keyMapping.vim
-source /Users/huanghuaye/.config/nvim/vim/easymotion.vim
-source /Users/huanghuaye/.config/nvim/vim/coc-vim.vim
+source ~/.config/nvim/plugs.vim
+source ~/.config/nvim/settings.vim
+source ~/.config/nvim/keyMapping.vim
+source ~/.config/nvim/vim/easymotion.vim
+source ~/.config/nvim/vim/coc-vim.vim
 
 lua << EOF
 require('_telescope')
