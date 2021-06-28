@@ -1,5 +1,27 @@
 {
 	"eslint.autoFixOnSave": true,
 	"vetur.ignoreProjectWarning": true,
-  "prettier.eslintIntegration": true
+  "cSpell.language": "en",
+  "cSpell.enabledLanguageIds": [
+    "javascript",
+    "typescript",
+    "vue",
+    "json"
+  ],
+  "prettier.eslintIntegration": true,
+  "cSpell.userWords": [
+    "Swiper",
+    "Wechat",
+    "datetime",
+    "donot",
+    "hightlight",
+    "joypixels",
+    "offcial",
+    "ouid",
+    "quato",
+    "rgba",
+    "vetur",
+    "weixin",
+    "zozo"
+  ]
 }

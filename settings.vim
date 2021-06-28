@@ -6,8 +6,8 @@ set smartcase
 set ignorecase
 set modifiable
 set scrolloff=5 
-set spell
-set spelllang=en_us
+" set spell
+" set spelllang=en_us
 
 " save
 nnoremap ;; :w<CR>
@@ -22,6 +22,9 @@ set expandtab
 set number
 " use system clipboard
 set clipboard=unnamed
+
+set splitright
+set splitbelow
 
 autocmd BufNewFile  *.html   0r ~/.config/nvim/template/skeleton.html
 autocmd BufNewFile  *.vue   0r ~/.config/nvim/template/skeleton.vue

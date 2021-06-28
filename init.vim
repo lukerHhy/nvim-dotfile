@@ -9,6 +9,5 @@ require('_telescope')
 require('_treesitter')
 require('_autopair')
 require('_webicons')
-require('_spell')
 EOF
 
