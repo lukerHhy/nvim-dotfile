@@ -5,9 +5,9 @@ source ~/.config/nvim/vim/easymotion.vim
 source ~/.config/nvim/vim/coc-vim.vim
 
 lua << EOF
-require('_telescope')
-require('_treesitter')
-require('_autopair')
-require('_webicons')
+--require('_telescope')
+--require('_treesitter')
+-- require('_autopair')
+-- require('_webicons')
 EOF
 

@@ -1,7 +1,11 @@
 {
 	"eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnType": true,
 	"vetur.ignoreProjectWarning": true,
+  "vetur.experimental.templateInterpolationService": true,
   "cSpell.language": "en",
+  "list.source.gfiles.defaultOptions": ["--number-select"],
+  "list.source.outline.defaultOptions": ["--number-select"],
   "cSpell.enabledLanguageIds": [
     "javascript",
     "typescript",

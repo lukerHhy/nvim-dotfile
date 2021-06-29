@@ -16,6 +16,8 @@ nnoremap ;a; :wa<CR>
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set smartindent
+
 " use tab to expand
 set expandtab
 " display line number
@@ -29,9 +31,9 @@ set splitbelow
 autocmd BufNewFile  *.html   0r ~/.config/nvim/template/skeleton.html
 autocmd BufNewFile  *.vue   0r ~/.config/nvim/template/skeleton.vue
 
-set background=light
+set background=dark
 colorscheme solarized
-let g:airline_solarized_bg='light'
+let g:airline_solarized_bg='dark'
 let g:solarized_termcolors=256
 
 " if hidden is not set, TextEdit might fail.

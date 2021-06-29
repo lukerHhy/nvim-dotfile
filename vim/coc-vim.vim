@@ -19,6 +19,8 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
@@ -61,10 +63,10 @@ augroup mygroup
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-xmap <leader>as  <Plug>(coc-codeaction-selected)
-nmap <leader>as  <Plug>(coc-codeaction-selected)
-xmap <leader>aa  <Plug>(coc-codeaction-cursor)
-nmap <leader>aa  <Plug>(coc-codeaction-cursor)
+xmap ;as  <Plug>(coc-codeaction-selected)
+nmap ;as  <Plug>(coc-codeaction-selected)
+xmap ;aa  <Plug>(coc-codeaction-cursor)
+nmap ;aa  <Plug>(coc-codeaction-cursor)
 
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
