@@ -6,6 +6,9 @@ set smartcase
 set ignorecase
 set modifiable
 set scrolloff=5 
+
+set termguicolors
+
 " set spell
 " set spelllang=en_us
 
@@ -32,7 +35,7 @@ autocmd BufNewFile  *.html   0r ~/.config/nvim/template/skeleton.html
 autocmd BufNewFile  *.vue   0r ~/.config/nvim/template/skeleton.vue
 
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 let g:airline_solarized_bg='dark'
 let g:solarized_termcolors=256
 
