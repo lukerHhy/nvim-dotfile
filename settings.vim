@@ -33,6 +33,10 @@ set splitbelow
 
 autocmd BufNewFile  *.html   0r ~/.config/nvim/template/skeleton.html
 autocmd BufNewFile  *.vue   0r ~/.config/nvim/template/skeleton.vue
+" autocmd BufWinLeave * mkview
+" autocmd BufWinEnter * silent loadview
+autocmd BufWrite * mkview
+autocmd BufRead * silent! loadview
 
 set background=dark
 colorscheme solarized8
