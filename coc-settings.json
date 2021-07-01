@@ -1,6 +1,6 @@
 {
 	"eslint.autoFixOnSave": true,
-  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnType": false,
 	"vetur.ignoreProjectWarning": true,
   "vetur.experimental.templateInterpolationService": true,
   "cSpell.language": "en",
