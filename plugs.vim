@@ -9,7 +9,8 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Plug 'preservim/nerdtree'
 Plug 'honza/vim-snippets'
 Plug 'puremourning/vimspector'
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
+Plug 'phaazon/hop.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 "Plug 'sheerun/vim-polyglot'

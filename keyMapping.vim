@@ -33,9 +33,11 @@ nnoremap <silent> [fzf-p]l     :<C-u>CocCommand fzf-preview.LocationList<CR>
 vmap ;rm  <Plug>(coc-format-selected)
 nmap ;rm  <Plug>(coc-format-selected)
 nmap ;f <Plug>(coc-format)
-
-nnoremap <F2> :NERDTreeToggle<CR>
-nnoremap <leader>n :NERDTreeFind<CR>
+vmap ;s <Plug>(coc-codeaction-selected)
+nmap ;s <Plug>(coc-codeaction-selected)
+nmap 'f <cmd>HopChar1<cr>
+nmap 'w <cmd>HopWord<cr>
+nmap 'l <cmd>HopLine<cr>
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |

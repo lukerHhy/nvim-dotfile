@@ -5,7 +5,9 @@ set foldlevelstart=999
 set smartcase
 set ignorecase
 set modifiable
+set synmaxcol=0
 set scrolloff=5 
+set redrawtime=10000
 
 set termguicolors
 
