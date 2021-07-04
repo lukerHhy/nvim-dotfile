@@ -1,4 +1,5 @@
 local npairs = require('nvim-autopairs')
+
 npairs.setup({
 		disable_filetype = { "TelescopePrompt" },
 		check_ts = true,
