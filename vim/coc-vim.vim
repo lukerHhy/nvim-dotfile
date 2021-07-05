@@ -113,4 +113,5 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-
+" Use vim-devicons
+let g:fzf_preview_use_dev_icons = 1

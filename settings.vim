@@ -1,5 +1,6 @@
 syntax enable
 " fold
+set encoding=UTF-8
 set foldmethod=indent
 set foldlevelstart=999 
 set smartcase
