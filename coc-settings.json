@@ -14,8 +14,10 @@
   ],
   "prettier.eslintIntegration": true,
   "cSpell.userWords": [
+    "Eeffect",
     "Swiper",
     "Wechat",
+    "ajuest",
     "cascader",
     "concat",
     "datetime",
@@ -33,10 +35,12 @@
     "readonly",
     "repassword",
     "rgba",
+    "specrator",
     "typeof",
     "vant",
     "vetur",
     "weixin",
-    "zozo"
+    "zozo",
+    "zozogolf"
   ]
 }

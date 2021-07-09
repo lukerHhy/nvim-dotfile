@@ -7,7 +7,7 @@ source ~/.config/nvim/vim/coc-vim.vim
 lua << EOF
 require('_nvimTree')
 --require('_telescope')
---require('_treesitter')
+require('_treesitter')
 -- require('_autopair')
 -- require('_webicons')
 EOF

@@ -35,9 +35,15 @@ nmap ;rm  <Plug>(coc-format-selected)
 nmap ;f <Plug>(coc-format)
 vmap ;s <Plug>(coc-codeaction-selected)
 nmap ;s <Plug>(coc-codeaction-selected)
-nmap 'f <cmd>HopChar1<cr>
-nmap 'w <cmd>HopWord<cr>
+nmap F <cmd>HopChar1<cr>
+nmap W <cmd>HopWord<cr>
 nmap 'l <cmd>HopLine<cr>
+
+nnoremap z0 :<C-u>setlocal foldlevel=0<CR>
+nnoremap z1 :<C-u>setlocal foldlevel=1<CR>
+nnoremap z2 :<C-u>setlocal foldlevel=2<CR>
+nnoremap z3 :<C-u>setlocal foldlevel=3<CR>
+nnoremap z4 :<C-u>setlocal foldlevel=4<CR>
 
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
