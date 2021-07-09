@@ -5,3 +5,9 @@ require'nvim-treesitter.configs'.setup {
     use_languagetree = true
   },
 }
+
+require'nvim-treesitter.configs'.setup {
+  context_commentstring = {
+    enable = true
+  }
+}

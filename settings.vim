@@ -1,7 +1,10 @@
 syntax enable
 " fold
-set foldmethod=indent
-set foldlevelstart=999 
+set encoding=UTF-8
+" set foldmethod=indent
+" set foldlevelstart=999 
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 set smartcase
 set ignorecase
 set modifiable
