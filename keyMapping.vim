@@ -35,7 +35,7 @@ nmap ;rm  <Plug>(coc-format-selected)
 nmap ;f <Plug>(coc-format)
 vmap ;s <Plug>(coc-codeaction-selected)
 nmap ;s <Plug>(coc-codeaction-selected)
-nmap F <cmd>HopChar1<cr>
+nmap s <cmd>HopChar1<cr>
 nmap W <cmd>HopWord<cr>
 nmap 'l <cmd>HopLine<cr>
 

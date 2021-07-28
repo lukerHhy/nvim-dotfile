@@ -12,3 +12,5 @@ require('_treesitter')
 -- require('_webicons')
 EOF
 
+set runtimepath^=/Users/huanghuaye/project/coc.volar
+

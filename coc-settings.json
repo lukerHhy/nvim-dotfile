@@ -3,6 +3,9 @@
   "coc.preferences.formatOnType": false,
 	"vetur.ignoreProjectWarning": true,
   "vetur.experimental.templateInterpolationService": true,
+  "vetur.grammar.customBlocks": {
+    "route": "yaml"
+  },
   "cSpell.language": "en",
   "list.source.gfiles.defaultOptions": ["--number-select"],
   "list.source.outline.defaultOptions": ["--number-select"],
