@@ -1,5 +1,6 @@
 {
 	"eslint.autoFixOnSave": true,
+	"eslint.showOutputChannel": true,
   "coc.preferences.formatOnType": true,
 	"vetur.ignoreProjectWarning": true,
   "vetur.experimental.templateInterpolationService": true,
@@ -20,6 +21,7 @@
   ],
   "prettier.eslintIntegration": true,
   "cSpell.userWords": [
+    "Antd",
     "Eeffect",
     "Swiper",
     "Wechat",
@@ -48,6 +50,7 @@
     "vant",
     "vetur",
     "weixin",
+    "windi",
     "zozo",
     "zozogolf"
   ]

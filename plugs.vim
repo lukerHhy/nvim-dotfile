@@ -21,10 +21,11 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'tpope/vim-fugitive'
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'nvim-telescope/telescope.nvim'
 " Plug 'windwp/nvim-autopairs'
 "Plug 'windwp/nvim-ts-autotag'
 "Plug 'lewis6991/spellsitter.nvim'
 call plug#end()
 
-let g:coc_global_extensions = ['coc-highlight','coc-pairs', 'coc-html', 'coc-fzf-preview', 'coc-spell-checker', 'coc-tsserver', 'coc-vetur', 'coc-eslint', 'coc-css', 'coc-prettier']
+let g:coc_global_extensions = ['coc-highlight','coc-pairs', 'coc-html', 'coc-fzf-preview', 'coc-spell-checker', 'coc-tsserver', 'coc-eslint', 'coc-css', 'coc-prettier']
