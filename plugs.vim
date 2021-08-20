@@ -16,16 +16,16 @@ Plug 'haya14busa/incsearch-fuzzy.vim',
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'tpope/vim-commentary'
-" Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'nvim-lua/popup.nvim'
 " Plug 'nvim-lua/plenary.nvim'
 Plug 'tpope/vim-fugitive'
-Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'nvim-telescope/telescope.nvim'
 " Plug 'windwp/nvim-autopairs'
 "Plug 'windwp/nvim-ts-autotag'
 "Plug 'lewis6991/spellsitter.nvim'
 call plug#end()
 
-let g:coc_global_extensions = ['coc-pairs', 'coc-html', 'coc-fzf-preview', 'coc-tsserver', 'coc-eslint', 'coc-prettier']
+let g:coc_global_extensions = ['coc-pairs', 'coc-html', 'coc-css', 'coc-fzf-preview', 'coc-tsserver', 'coc-eslint', 'coc-prettier']
