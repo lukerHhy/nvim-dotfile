@@ -10,6 +10,17 @@ return packer.startup(function()
    local plugin_status = require("core.utils").load_config().plugin_status
 
    -- this is arranged on the basis of when a plugin starts
+   --
+  use {
+    "folke/trouble.nvim",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
    -- this is the nvchad core repo containing utilities for some features like theme swticher, no need to lazy load
    use {
