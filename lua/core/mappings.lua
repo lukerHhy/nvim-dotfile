@@ -27,6 +27,15 @@ M.misc = function()
 
       -- use ESC to turn off search highlighting
       map("n", "<Esc>", ":noh <CR>")
+
+      map("n", "<leader>o", ":Telescope lsp_document_symbols<CR>")
+      map("n", "<leader>O", ":Telescope lsp_workspace_symbols<CR>")
+      map("n", "<leader>t", ":Telescope lsp_document_diagnostics<CR>")
+      map("n", "<leader>fw", ":Telescope lsp_document_diagnostics<CR>")
+      map("m", ";f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
+      map("n", ";;", ":w<CR>")
+      map("n", ";a", ":wa<CR>")
+      map("n", ";q", ":qa!<CR>")
    end
 
    local function optional_mappings()

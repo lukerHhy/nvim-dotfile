@@ -55,7 +55,7 @@ M.options = {
    permanent_undo = true,
    shiftwidth = 2,
    smartindent = true,
-   tabstop = 8, -- Number of spaces that a <Tab> in the file counts for
+   tabstop = 2, -- Number of spaces that a <Tab> in the file counts for
    timeoutlen = 400,
    relativenumber = false,
    ruler = false,
@@ -80,16 +80,16 @@ M.plugin_status = {
    cheatsheet = true, -- fuzzy search your commands/keymappings
    colorizer = true,
    comment = true, -- universal commentor
-   dashboard = false, -- a nice looking dashboard
+   dashboard = true, -- a nice looking dashboard
    esc_insertmode = true, -- escape from insert mode using custom keys
    feline = true, -- statusline
    gitsigns = true, -- gitsigns in statusline
    lspsignature = true, -- lsp enhancements
-   neoformat = true, -- universal formatter
-   neoscroll = true, -- smooth scroll
-   telescope_media = false, -- see media files in telescope picker
+   neoformat = false, -- universal formatter
+   neoscroll = false, -- smooth scroll
+   telescope_media = true, -- see media files in telescope picker
    truezen = false, -- no distraction mode for nvim
-   vim_fugitive = false, -- git in nvim
+   vim_fugitive = true, -- git in nvim
    vim_matchup = true, -- % magic, match it but improved
 }
 
@@ -153,7 +153,7 @@ M.mappings.plugin = {
       user_keys = "<leader>uk",
    },
    comment = {
-      toggle = "<leader>/", -- trigger comment on a single/selected lines/number prefix
+      toggle = "gcc", -- trigger comment on a single/selected lines/number prefix
    },
    dashboard = {
       bookmarks = "<leader>bm",
