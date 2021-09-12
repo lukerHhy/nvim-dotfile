@@ -32,10 +32,12 @@ M.misc = function()
       map("n", "<leader>O", ":Telescope lsp_workspace_symbols<CR>")
       map("n", "<leader>t", ":Telescope lsp_document_diagnostics<CR>")
       map("n", "<leader>fw", ":Telescope lsp_document_diagnostics<CR>")
-      map("m", ";f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
+      map("n", ";f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
       map("n", ";;", ":w<CR>")
       map("n", ";a", ":wa<CR>")
       map("n", ";q", ":qa!<CR>")
+      map("n", "s", ":HopChar1<CR>")
+      map("n", "S", ":HopChar2<CR>")
    end
 
    local function optional_mappings()
