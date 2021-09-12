@@ -9,8 +9,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'honza/vim-snippets'
 " Plug 'puremourning/vimspector'
 Plug 'phaazon/hop.nvim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim',
 Plug 'haya14busa/incsearch-easymotion.vim'
@@ -19,10 +19,10 @@ Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'tpope/vim-fugitive'
-"Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'nvim-telescope/telescope.nvim'
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+Plug 'nvim-telescope/telescope.nvim'
 " Plug 'windwp/nvim-autopairs'
 "Plug 'windwp/nvim-ts-autotag'
 "Plug 'lewis6991/spellsitter.nvim'
