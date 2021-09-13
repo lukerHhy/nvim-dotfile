@@ -8,27 +8,28 @@ local use = packer.use
 return packer.startup(function()
    local plugin_status = require("core.utils").load_config().plugin_status
 
-  use({ "jose-elias-alvarez/null-ls.nvim",
+   use {
+      "jose-elias-alvarez/null-ls.nvim",
       config = function()
-        require('plugins.configs.null')
+         require "plugins.configs.null"
       end,
-      after = "nvim-lspconfig"
-    })
+      after = "nvim-lspconfig",
+   }
 
-use {
-     'ms-jpq/coq_nvim',
-     branch = 'coq',
-     event = "VimEnter",
-     config = 'vim.cmd[[COQnow]]'
-}
-use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+   use {
+      "ms-jpq/coq_nvim",
+      branch = "coq",
+      event = "VimEnter",
+      config = "vim.cmd[[COQnow]]",
+   }
+   use { "ms-jpq/coq.artifacts", branch = "artifacts" }
 
    -- this is arranged on the basis of when a plugin starts
-  
-  use {
-    'phaazon/hop.nvim',
-    as = 'hop'
-  }
+
+   use {
+      "phaazon/hop.nvim",
+      as = "hop",
+   }
 
    -- this is the nvchad core repo containing utilities for some features like theme swticher, no need to lazy load
    use {
@@ -43,7 +44,6 @@ use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
       "wbthomason/packer.nvim",
       event = "VimEnter",
    }
-
 
    use {
       "NvChad/nvim-base16.lua",
@@ -192,57 +192,57 @@ use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
    }
 
    -- load luasnips + cmp related in insert mode only
--- 
---    use {
---       "rafamadriz/friendly-snippets",
---       event = "InsertEnter",
---    }
--- 
---    use {
---       "hrsh7th/nvim-cmp",
---       after = "friendly-snippets",
---       config = function()
---          require "plugins.configs.cmp"
---       end,
---    }
--- 
---    use {
---       "L3MON4D3/LuaSnip",
---       wants = "friendly-snippets",
---       after = "nvim-cmp",
---       config = function()
---          require("plugins.configs.others").luasnip()
---       end,
---    }
--- 
---    use {
---       "saadparwaiz1/cmp_luasnip",
---       after = "LuaSnip",
---    }
--- 
---    use {
---       "hrsh7th/cmp-nvim-lua",
---       after = "cmp_luasnip",
---    }
--- 
---    use {
---       "hrsh7th/cmp-nvim-lsp",
---       after = "cmp-nvim-lua",
---    }
--- 
---    use {
---       "hrsh7th/cmp-buffer",
---       after = "cmp-nvim-lsp",
---    }
--- 
---    -- misc plugins
---    use {
---       "windwp/nvim-autopairs",
---       after = "nvim-cmp",
---       config = function()
---          require("plugins.configs.others").autopairs()
---       end,
---    }
+   --
+   --    use {
+   --       "rafamadriz/friendly-snippets",
+   --       event = "InsertEnter",
+   --    }
+   --
+   --    use {
+   --       "hrsh7th/nvim-cmp",
+   --       after = "friendly-snippets",
+   --       config = function()
+   --          require "plugins.configs.cmp"
+   --       end,
+   --    }
+   --
+   --    use {
+   --       "L3MON4D3/LuaSnip",
+   --       wants = "friendly-snippets",
+   --       after = "nvim-cmp",
+   --       config = function()
+   --          require("plugins.configs.others").luasnip()
+   --       end,
+   --    }
+   --
+   --    use {
+   --       "saadparwaiz1/cmp_luasnip",
+   --       after = "LuaSnip",
+   --    }
+   --
+   --    use {
+   --       "hrsh7th/cmp-nvim-lua",
+   --       after = "cmp_luasnip",
+   --    }
+   --
+   --    use {
+   --       "hrsh7th/cmp-nvim-lsp",
+   --       after = "cmp-nvim-lua",
+   --    }
+   --
+   --    use {
+   --       "hrsh7th/cmp-buffer",
+   --       after = "cmp-nvim-lsp",
+   --    }
+   --
+   --    -- misc plugins
+   --    use {
+   --       "windwp/nvim-autopairs",
+   --       after = "nvim-cmp",
+   --       config = function()
+   --          require("plugins.configs.others").autopairs()
+   --       end,
+   --    }
 
    use {
       "glepnir/dashboard-nvim",
@@ -357,5 +357,4 @@ use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
          require("core.mappings").vim_fugitive()
       end,
    }
-
 end)

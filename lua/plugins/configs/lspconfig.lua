@@ -75,8 +75,7 @@ for _, lsp in ipairs(servers) do
    --    }
    -- }
 
-    nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(
-       vim.tbl_deep_extend("force", {
+   nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(vim.tbl_deep_extend("force", {
       on_attach = on_attach,
       capabilities = capabilities,
       -- root_dir = vim.loop.cwd,
@@ -84,13 +83,13 @@ for _, lsp in ipairs(servers) do
          debounce_text_changes = 200,
       },
       settings = {
-        init_options = {
-          languageFeatures = {
-            signatureHelp = false
-          }
-        }
-      }
-        }, {})))
+         init_options = {
+            languageFeatures = {
+               signatureHelp = false,
+            },
+         },
+      },
+   }, {})))
 end
 
 -- require("anyfile").setup_luaLsp(on_attach, capabilities) -- this will be removed soon after the custom hooks PR

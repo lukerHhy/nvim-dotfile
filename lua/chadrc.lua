@@ -216,7 +216,7 @@ M.custom.mappings = {
 
 M.plugins = {
    lspconfig = {
-      servers = {"html", "cssls", "volar", "tsserver"}
+      servers = { "html", "cssls", "volar", "tsserver" },
    },
 }
 
