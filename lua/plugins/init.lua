@@ -8,6 +8,12 @@ local use = packer.use
 return packer.startup(function()
    local plugin_status = require("core.utils").load_config().plugin_status
 
+  use({ "jose-elias-alvarez/null-ls.nvim",
+      config = function()
+        require('plugins.configs.null')
+      end,
+      after = "nvim-lspconfig"
+    })
 
    -- this is arranged on the basis of when a plugin starts
   
@@ -136,11 +142,6 @@ return packer.startup(function()
       config = function()
          require "plugins.configs.lspconfig"
       end,
-   }
-
-   use { 
-      "jose-elias-alvarez/null-ls.nvim",
-      opt = true
    }
 
    use {
