@@ -35,7 +35,7 @@ local function on_attach(_, bufnr)
    buf_set_keymap("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
    buf_set_keymap("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>", opts)
    buf_set_keymap("n", "<space>q", "<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>", opts)
-   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting_seq_sync()<CR>", opts)
    buf_set_keymap("v", "<space>ca", "<cmd>lua vim.lsp.buf.range_code_action()<CR>", opts)
 end
 
@@ -59,7 +59,24 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 local servers = require("core.utils").load_config().plugins.lspconfig.servers
 
 for _, lsp in ipairs(servers) do
-   nvim_lsp[lsp].setup {
+   -- nvim_lsp[lsp].setup ({
+   --    on_attach = on_attach,
+   --    capabilities = capabilities,
+   --    -- root_dir = vim.loop.cwd,
+   --    flags = {
+   --       debounce_text_changes = 200,
+   --    },
+   --    settings = {
+   --      init_options = {
+   --        languageFeatures = {
+   --          signatureHelp = false
+   --        }
+   --      }
+   --    }
+   -- }
+
+    nvim_lsp[lsp].setup(coq.lsp_ensure_capabilities(
+       vim.tbl_deep_extend("force", {
       on_attach = on_attach,
       capabilities = capabilities,
       -- root_dir = vim.loop.cwd,
@@ -73,7 +90,7 @@ for _, lsp in ipairs(servers) do
           }
         }
       }
-   }
+        }, {})))
 end
 
 -- require("anyfile").setup_luaLsp(on_attach, capabilities) -- this will be removed soon after the custom hooks PR
