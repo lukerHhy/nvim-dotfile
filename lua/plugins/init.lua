@@ -3,19 +3,17 @@ local present, packer = pcall(require, "plugins.packerInit")
 if not present then
    return false
 end
-
 local use = packer.use
 
 return packer.startup(function()
    local plugin_status = require("core.utils").load_config().plugin_status
 
+
    -- this is arranged on the basis of when a plugin starts
   
   use {
     'phaazon/hop.nvim',
-    as = 'hop',
-    config = function()
-    end
+    as = 'hop'
   }
 
    -- this is the nvchad core repo containing utilities for some features like theme swticher, no need to lazy load
@@ -31,6 +29,7 @@ return packer.startup(function()
       "wbthomason/packer.nvim",
       event = "VimEnter",
    }
+
 
    use {
       "NvChad/nvim-base16.lua",
@@ -137,6 +136,11 @@ return packer.startup(function()
       config = function()
          require "plugins.configs.lspconfig"
       end,
+   }
+
+   use { 
+      "jose-elias-alvarez/null-ls.nvim",
+      opt = true
    }
 
    use {
@@ -344,4 +348,5 @@ return packer.startup(function()
          require("core.mappings").vim_fugitive()
       end,
    }
+
 end)
