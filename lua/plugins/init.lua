@@ -42,15 +42,15 @@ return packer.startup(function()
       config = override_req("feline", "plugins.configs.statusline"),
    }
 
-   use {
-      "akinsho/bufferline.nvim",
-      disable = not plugin_settings.status.bufferline,
-      after = "nvim-web-devicons",
-      config = override_req("bufferline", "plugins.configs.bufferline"),
-      setup = function()
-         require("core.mappings").bufferline()
-      end,
-   }
+   -- use {
+   --    "akinsho/bufferline.nvim",
+   --    disable = not plugin_settings.status.bufferline,
+   --    after = "nvim-web-devicons",
+   --    config = override_req("bufferline", "plugins.configs.bufferline"),
+   --    setup = function()
+   --       require("core.mappings").bufferline()
+   --    end,
+   -- }
 
    use {
       "lukas-reineke/indent-blankline.nvim",
@@ -98,12 +98,12 @@ return packer.startup(function()
       config = override_req("lspconfig", "plugins.configs.lspconfig"),
    }
 
-   use {
-      "ray-x/lsp_signature.nvim",
-      disable = not plugin_settings.status.lspsignature,
-      after = "nvim-lspconfig",
-      config = override_req("signature", "(plugins.configs.others).signature()"),
-   }
+   -- use {
+   --    "ray-x/lsp_signature.nvim",
+   --    disable = not plugin_settings.status.lspsignature,
+   --    after = "nvim-lspconfig",
+   --    config = override_req("signature", "(plugins.configs.others).signature()"),
+   -- }
 
    use {
       "andymass/vim-matchup",
