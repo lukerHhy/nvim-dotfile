@@ -223,7 +223,7 @@ M.mappings.plugins = {
       git_status = "<leader>gt",
       help_tags = "<leader>fh",
       live_grep = "<leader>fw",
-      oldfiles = "<leader>fo",
+      oldfiles = "<leader>fO",
       themes = "<leader>th", -- NvChad theme picker
 
       telescope_media = {
