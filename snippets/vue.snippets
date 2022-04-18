@@ -1,0 +1,31 @@
+# comment
+snippet vtsx vue template script tsx
+	<script lang="tsx">
+	export default defineComponent({
+		setup(props) {
+			const { t } = useI18n()
+			return () => <div></div>
+		}
+	})
+	</script>
+
+snippet vdc vue defineComponent
+	const comp = defineComponent({
+		setup(props) {
+			const { t } = useI18n()
+			return () => <div></div>
+		}
+	})
+
+snippet vprop vue props
+	$1: {
+		type: $2,
+		default: $3
+	}
+
+snippet vroute vue sfc route
+	<route lang="yaml">
+	meta:
+		layout: $1
+	</route>
+

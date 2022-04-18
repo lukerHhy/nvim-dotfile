@@ -88,7 +88,8 @@ M.plugins = {
          },
       },
       luasnip = {
-         snippet_path = {},
+         snippet_path = {
+         },
       },
       statusline = {
          -- hide, show on specific filetypes
